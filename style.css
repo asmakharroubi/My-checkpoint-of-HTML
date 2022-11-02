@@ -1,0 +1,155 @@
+div {
+  display: inline;
+  font-family: roboto;
+}
+/* CSS of the title */
+.title {
+  color: rgb(70, 145, 180);
+  font-style: oblique 10deg;
+  font-size: 30px;
+}
+/* CSS of the subtitle */
+.sous_titre {
+  text-decoration: underline;
+  font-size: 20px;
+  color: rgb(197, 104, 218);
+}
+
+/* CSS of navbar */
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 450px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#nb {
+  display: inline;
+  float: left;
+}
+
+#nb a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(231, 209, 227);
+}
+
+/* CSS of the table */
+#workexperience {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  padding-left: 50px;
+}
+
+#workexperience td,
+#workexperience th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tt {
+  background-color: #f2f2f2;
+}
+
+#workexperience tr:hover {
+  background-color: #ddd;
+}
+
+#workexperience th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-align: center;
+  background-color: #ddd;
+  color: black;
+}
+
+/* CSS form */
+input[type="text"],
+select,
+input[type="number"] {
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+/* CSS of the button */
+.boutton {
+  background-color: rgb(135, 189, 214);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paragraph {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-left: 400px;
+  padding: 20px;
+}
+/* CSS of the body */
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 224, 233, 1) 100%
+  );
+}
+/* CSS of the image */
+#img {
+  border-radius: 7% 10% 10% 10% / 10% 8% 10% 10%;
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+}
+/* CSS of the paragraph education */
+#education {
+  letter-spacing: normal;
+  line-height: 30px;
+  margin-left: 10px;
+}
+/* CSS of the footer */
+footer > p {
+  text-align: center;
+}
+
+#top {
+  float: right;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(135, 189, 214);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +16,13 @@
     <header>
       <a name="Topofthepage"></a>
       <!-- This is the navigation bar -->
-      <ul>
+      <ul id="navbar">
         <div class="topnav">
-          <li>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-          </li>
+          <li id="nb"><a href="#home">Home</a></li>
+          <li id="nb"><a href="#about">About</a></li>
+          <li id="nb"><a href="#work">Work</a></li>
+          <li id="nb"><a href="#resume">Resume</a></li>
+          <li id="nb"><a href="#contact">Contact</a></li>
         </div>
       </ul>
     </header>
@@ -26,7 +30,7 @@
       <!-- This is the home section -->
       <section>
         <a name="home"></a>
-        <h2 class="title">Home</h2>
+        <h2 class="title"><i class="fa fa-home"></i>Home</h2>
         <form>
           <label>First Name : </label>
           <input type="text" name="first name" placeholder="First Name" />
@@ -34,7 +38,7 @@
           <input type="text" name="last name" placeholder="Last Name" />
           <label>Age : </label>
           <input type="number" name="age" placeholder="Age" />
-          <button type="button">Submit</button>
+          <button class="boutton" type="button">Submit</button>
         </form>
       </section>
       <!-- This is the about section -->
@@ -42,10 +46,16 @@
         <a name="about"></a>
         <h2 class="title">About</h2>
         <!-- Adding image -->
-        <img src="./assets/Asma.jpg" height="400" width="400" alt="Asma" />
+        <img
+          id="img"
+          src="./assets/Asma.jpg"
+          height="400"
+          width="400"
+          alt="Asma"
+        />
         <br />
 
-        <p>
+        <p class="paragraph">
           Welcome! My name is Asma Kharroubi. I'm 25 years old. I am tunisian
           based in Beja. Currently, i'm studying the Full-Stack Javascrpit
           training in the hackerspace of go my code. Recently, on july 2022, i
@@ -70,7 +80,7 @@
         <a name="work"></a>
         <h2 class="title">Work</h2>
         <h4 class="sous_titre">Professional Experience :</h4>
-        <table border="1">
+        <table border="1" id="workexperience">
           <tr>
             <th>Period</th>
             <th>Postion</th>
@@ -83,7 +93,7 @@
             <td>Tunisie Telecom Agency Beja</td>
             <td>Commercial service</td>
           </tr>
-          <tr>
+          <tr class="tt">
             <td>August 2020</td>
             <td>Commercial agent</td>
             <td>Tunisie Telecom Agency Beja</td>
@@ -174,7 +184,7 @@
           &nbsp; &nbsp; Mention : Very good with congratulations of the jury.
         </ul>
         <!-- Adding video from the desktop -->
-        <video width="640" height="360" autoplay>
+        <video width="640" height="360" autoplay controls>
           <source
             src="./assets/Rédiger sa lettre de motivation.mp4"
             type="video/mp4"
@@ -188,7 +198,7 @@
 
         <!-- <textarea name="" cols="30" rows="5"> -->
         <h4 class="sous_titre"><i>Education : </i></h4>
-        <p>
+        <p id="education">
           <i><b>Since October 2022 : Full-Stack Javascrpit training</b></i>
           <br />&nbsp; Go my code Hackerspace in Beja
           <br />
@@ -218,7 +228,7 @@
           &nbsp; High School of Ibn El-Haythem Beja
         </p>
         <h4 class="sous_titre"><i>Skills : </i></h4>
-        <p><i>Languages :</i></p>
+        <br /><i>Languages :</i>
         <p>
           English :
           <select>
@@ -239,16 +249,17 @@
             <option value="high level">Advanced</option>
           </select>
         </p>
-        <p><i>IT Tools :</i></p>
-        <p>
-          HTML,CSS <input type="checkbox" /> Javascrpit
-          <input type="checkbox" /> Python <input type="checkbox" /> Java
-          <input type="checkbox" /> JEE <input type="checkbox" /> C,C++
-          <input type="checkbox" />
-        </p>
-
+        <br />
+        <i>IT Tools :</i>
+        <br /><br />
+        HTML,CSS <input type="checkbox" /> Javascrpit
+        <input type="checkbox" /> Python <input type="checkbox" /> Java
+        <input type="checkbox" /> JEE <input type="checkbox" /> C,C++
+        <input type="checkbox" />
+        <br />
         <label>
-          <h4><i>Hobbies and interests : </i></h4>
+          <br />
+          <i>Hobbies and interests : </i>
         </label>
         <input type="text" name="hobbies" placeholder="hobbies and interests" />
         <br />
@@ -279,12 +290,12 @@
           <br />
           <br />
           Adress : <input type="text" name="Adress" placeholder="Adress" />
-          <button type="button">Submit</button>
+          <button class="boutton" type="button">Submit</button>
         </form>
       </section>
     </main>
     <hr />
     <footer><p>Copyright &copy; 2022 all rights reserved</p></footer>
-    <a href="#Topofthepage">Let's go up top</a>
+    <a id="top" href="#Topofthepage">Let's go up top</a>
   </body>
 </html>
